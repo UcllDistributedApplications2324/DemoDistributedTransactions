@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: Pharmacy Service v1
+  description: |-
+    API for Pharmacy Service
+  termsOfService: http://swagger.io/terms/
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+paths:
+components:
+  schemas:
+    ReserveMedicationCommand:
+      type: object
+      properties:
+        prescriptionId:
+          type: string
+        medicationId:
+          type: string
+    MedicationReservedEvent:
+      type: object
+      properties:
+        prescriptionId:
+          type: string
+        medicationId:
+          type: string
+        availableFrom:
+          type: string
+          format: date
