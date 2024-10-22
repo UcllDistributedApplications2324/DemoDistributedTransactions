@@ -11,6 +11,7 @@ public class PharmacyService {
         // Medication is always reservable
         //   50% change it is available today
         //   50% change it will be here tomorrow in the next delivery
+        // As soon as it is reserved it needs to get paid
 
         if (Math.random() > 0.5) {
             return LocalDate.now();
